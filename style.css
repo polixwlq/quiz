@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(26, 24, 37);
+    margin-bottom: 40px;
+}
+
+body {
+    background-color: rgb(40, 37, 57);
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 1024px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img {
+    height: 200px;
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul {
+    width: max-content;
+}
+
+nav li a {
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 28px;
+    line-height: 200px;
+    font-weight: bold;
+    font-family: monospace;
+    color: white;
+}
+
+a:hover {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+p.answer {
+    color: rgb(40, 37, 57);
+}
+
+.puzzle {
+    font-size: 22px;
+}
+
+p.answer:before {
+    content: "Відповідь: ";
+    color: white
+}
+
+p.answer:hover {
+    color: white;
+}
+
+main {
+    width: 60%;
+    margin: 0 auto;
+    padding: 24px 32px;
+}
+
+main h2 {
+text-align: center;
+font-size: 36px;
+}
